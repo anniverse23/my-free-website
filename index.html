@@ -3,38 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Free Website</title>
+    <title>My Fancy Free Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Free Website</h1>
+        <h1 class="fade-in">Welcome to My Fancy Website</h1>
         <nav>
             <a href="#about">About</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="fade-up">
         <h2>About Me</h2>
-        <p>This is a simple website created for free hosting.</p>
+        <p>Hi! I’m building my first free website with modern design, animations, and a working contact form. 🚀</p>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+    <section id="projects" class="fade-up">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-up">
+        <h2>Contact Me</h2>
+        <form name="contact" method="POST" data-netlify="true" id="contactForm">
+            <input type="hidden" name="form-name" value="contact">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
         <p id="formMessage"></p>
     </section>
 
-    <footer>
-        <p>© 2025 My Free Website</p>
+    <footer class="fade-in">
+        <p>© 2025 My Fancy Free Website</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
